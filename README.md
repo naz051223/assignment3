@@ -4,6 +4,10 @@
 **Student number:** 2200004323  
 **Course:** SEN0415 Advanced Web Programming — Fall 2026, Week 5
 
+## Open by double-click
+
+Extract the ZIP, then double-click index.html. It contains the compiled React app and CSS and requires no server or installation. app.html is the Vite source entry. After editing source files, run npm run build to regenerate index.html. For source development, npm run dev opens /app.html with live updates.
+
 ## Run
 
 Use Node.js 20.19+ (or a supported newer version).
@@ -84,4 +88,5 @@ Three tasks were entered through the interface, with one task in each status. Th
 ## Submission
 
 Submit `assignment3.zip` to the Assignment 3 entry on CATS before its posted deadline. The archive contains one `assignment3` folder and excludes installed packages. Review the reducer explanation, understand every line, and revise the wording to your own explanation before submission, as required by the course AI policy. Make sure the instructor has access to the private repository before claiming Bonus 4.
+
 
