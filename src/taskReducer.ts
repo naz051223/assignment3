@@ -1,4 +1,4 @@
-// Full name: TO BE PROVIDED | Student number: TO BE PROVIDED
+// Full name: Tuba Nazlı İpekyüz | Student number: 2200004323
 import type { Filter } from './filter'
 export type Status = 'todo' | 'in-progress' | 'done'
 export type Task = { id: string; title: string; status: Status }
@@ -47,3 +47,4 @@ export function taskReducer(state: State, action: Action): State {
     }
   }
 }
+
