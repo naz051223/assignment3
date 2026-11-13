@@ -60,9 +60,9 @@ Moving the filter into reducer state made transitions easier to describe with ty
 
 ## Bonus 4: Git repository
 
-**Pending: GitHub/GitLab repository URL has not been supplied or published.**
+Repository: https://github.com/naz051223/assignment3
 
-The local repository contains separate implementation commits and a `.gitignore` excluding `node_modules` and `dist`. This bonus is not complete until the project is pushed to GitHub/GitLab, the real link replaces this notice, and the instructor has the access required by CATS. Do not claim that a local repository alone completes this bonus.
+The private repository contains the implementation history in separate commits, the four screenshots and a .gitignore excluding node_modules and dist. Give the instructor access using the account announced in CATS before submitting.
 
 ## Screenshots
 
@@ -83,4 +83,5 @@ Three tasks were entered through the interface, with one task in each status. Th
 
 ## Submission
 
-Submit `assignment3.zip` to the Assignment 3 entry on CATS before its posted deadline. The archive contains one `assignment3` folder and excludes installed packages. Review the reducer explanation, understand every line, and revise the wording to your own explanation before submission, as required by the course AI policy. Complete the remote repository step before claiming Bonus 4.
+Submit `assignment3.zip` to the Assignment 3 entry on CATS before its posted deadline. The archive contains one `assignment3` folder and excludes installed packages. Review the reducer explanation, understand every line, and revise the wording to your own explanation before submission, as required by the course AI policy. Make sure the instructor has access to the private repository before claiming Bonus 4.
+
