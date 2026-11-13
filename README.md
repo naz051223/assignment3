@@ -54,13 +54,13 @@ Verified output:
 
 ## Bonus 3: Explain your reducer
 
-A reducer describes how an action changes the current state. It must be pure: the same state and action must produce the same result without changing anything outside the function. My reducer creates a new state object and replaces arrays or task objects when their contents change. If I changed an existing array with push, React could see the same reference and skip an update. Mutation would also damage my undo history because earlier snapshots could point to the same changed data.
+The reducer takes the current state and an action, then returns the next state. It needs to be pure so that the same inputs give the same result. I use spread syntax, map and filter instead of changing the existing state. If I used push on the old tasks array, its reference would stay the same, and React might skip an update. It could also change the older lists saved for undo.
 
-The form creates each task ID with crypto.randomUUID() before dispatching the add action. Creating a random ID inside the reducer would mean that calling it twice with identical arguments could produce different tasks. Passing the ID in the action makes the reducer predictable and lets tests choose fixed IDs.
+The add form creates the task ID with crypto.randomUUID() and sends it with the action. The reducer only uses the ID it receives. This keeps random values outside the reducer and makes testing simpler because a test can provide a fixed ID.
 
-I store only the complete task list, the selected filter, and previous task lists for undo. During rendering, filterTasks selects visible tasks and countByFilter calculates the numbers. Storing those results separately would require updating several copies of the same information. For example, deleting a done task could remove its row but leave the Done count unchanged if I forgot to update the stored counts.
+The filtered list and the counts are calculated from state.tasks while the component renders. I do not save them as separate state because they are already based on information in the task list. Otherwise, I would need to update several values after each action. For example, deleting a completed task could remove it from the list but leave the Done count at one if I forgot to update that count.
 
-Moving the filter into reducer state made transitions easier to describe with typed actions. Every filter click now dispatches setFilter, and task actions explicitly preserve the current filter. The extra challenge was undo: it should restore task data without restoring an old filter. Keeping history as task arrays rather than complete state objects solves that problem.
+Keeping the filter in the reducer makes the state changes easier to follow: clicking a filter sends a setFilter action. Undo needs extra care, though, because changing a filter should not be undone. I solve this by keeping only earlier task lists in past. Undo restores the tasks while keeping the filter currently selected.
 
 ## Bonus 4: Git repository
 
