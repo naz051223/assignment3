@@ -64,9 +64,13 @@ Keeping the filter in the reducer makes the state changes easier to follow: clic
 
 ## Bonus 4: Git repository
 
+GitHub username: naz051223
+
+Profile: https://github.com/naz051223
+
 Repository: https://github.com/naz051223/assignment3
 
-The private repository contains the implementation history in separate commits, the four screenshots and a .gitignore excluding node_modules and dist. Give the instructor access using the account announced in CATS before submitting.
+The repository contains the implementation history in separate commits, the four screenshots and a .gitignore excluding node_modules and dist. The repository link above is provided for reviewing the assignment.
 
 ## Screenshots
 
@@ -87,6 +91,6 @@ Three tasks were entered through the interface, with one task in each status. Th
 
 ## Submission
 
-Submit `assignment3.zip` to the Assignment 3 entry on CATS before its posted deadline. The archive contains one `assignment3` folder and excludes installed packages. Review the reducer explanation, understand every line, and revise the wording to your own explanation before submission, as required by the course AI policy. Make sure the instructor has access to the private repository before claiming Bonus 4.
+Submit `assignment3.zip` to the Assignment 3 entry on CATS before its posted deadline. The archive contains one `assignment3` folder and excludes installed packages. Review the reducer explanation, understand every line, and revise the wording to your own explanation before submission, as required by the course AI policy. Make sure the instructor can open the repository link before claiming Bonus 4.
 
 
